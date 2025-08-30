@@ -1,0 +1,17 @@
+# include<iostream>
+using namespace std;
+
+int main() {
+
+	int a,b,c;
+
+	cout << "If you have: "; 
+	cin>> a <<"\n";
+	cout << "I gave rs: ";
+	cin >> b << "\n";
+	cout << "You have left with total: " 
+	cout<< c=a+b ;
+
+
+	return 0;
+}
