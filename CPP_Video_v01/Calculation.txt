@@ -4,12 +4,12 @@ int main()
 {
 	int num1, num2;
 
-	cout << "Addition\n"
+	cout << "Addition\n";
 	cout << "1:    "; cin >>num1 cout<<"\n";
 	cout << "2:    "; cin >>num2 cout<<"\n";
 	cout << "sum:  "<<num1 + num2 cout<<"\n" <<"\n";
 	
-	cout << "Multiply\n"
+	cout << "Multiply\n";
 	cout << "1:    "; cin >>num1 cout<<"\n";
 	cout << "2:    "; cin >>num2 cout<<"\n";
 	cout << "sum:  "<<num1 + num2;
