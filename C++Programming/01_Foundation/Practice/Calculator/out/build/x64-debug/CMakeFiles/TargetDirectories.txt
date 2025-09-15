@@ -1,3 +1,0 @@
-C:/Users/Lenovo/Documents/GitHub/GTED_P01_CPP_DSA_F/C++Programming/01_Foundation/Practice/Calculator/out/build/x64-debug/CMakeFiles/Calculator.dir
-C:/Users/Lenovo/Documents/GitHub/GTED_P01_CPP_DSA_F/C++Programming/01_Foundation/Practice/Calculator/out/build/x64-debug/CMakeFiles/edit_cache.dir
-C:/Users/Lenovo/Documents/GitHub/GTED_P01_CPP_DSA_F/C++Programming/01_Foundation/Practice/Calculator/out/build/x64-debug/CMakeFiles/rebuild_cache.dir
