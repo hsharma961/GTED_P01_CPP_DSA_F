@@ -5,6 +5,7 @@
 
 int main()
 {
-	std::cout << "Hello World I am Hitesh Sharma on my journey to be a good engine developer!." << std::endl;
+	std::cout << "Hello World I am Hitesh Sharma on my journey to be a good engine developer!.""\n";
+		std::cout << "Lets Begin the JOURNEY!.";
 	return 0;
 }
