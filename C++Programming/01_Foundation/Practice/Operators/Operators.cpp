@@ -2,7 +2,7 @@
 
 int main()
 {
-	int n = 3;
+	int n = 144;
 	std::cout << "lets say n=3, so now lets say\n"
 		<< "\nn added by		2	=	" << 2 + n
 		<< "\nn substracted by	5	=	" << 5 - n
@@ -11,5 +11,5 @@ int main()
 		<< "\n remainder of		n	=	" << n%30
 		<< "\n square root  of	n	=	" << sqrt(n)
 		<< "\n";
-	return 0;
+
 }
