@@ -5,7 +5,7 @@
 int main() {
     // 1. Get the input line.
     std::string inputLine = "The cat cat jumped, jumped cat again, cat is still being cat.";
-    std::string wordToFind = "cat""jumped";
+    std::string wordToFind = "cat";
 
     // 2. Split the input line into words.
     // We can use a stringstream to treat the string like an input stream.
@@ -13,7 +13,7 @@ int main() {
     std::string word;
 
     // 3. Initialize a variable `cat_count` to 0.
-    int catJumpedCount = 0;
+    int catCount = 0;
 
     // 4. For each word in the stream:
     // This loop reads words from the stream, separated by whitespace, until the end.
@@ -21,11 +21,11 @@ int main() {
         // 5. If the current word is "cat":
         if (word == wordToFind) {
             // 6. Increment `cat_count` by 1.
-            catJumpedCount++;
+            catCount++;
         }
     }
 
     // 7. Print the final value of `cat_count`.
-    std::cout << catJumpedCount;
+    std::cout << catCount;
     return 0;
 }

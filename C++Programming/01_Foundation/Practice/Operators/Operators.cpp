@@ -9,7 +9,6 @@ int main()
 		<< "\nn multyply by		4	=	" << 4 * n
 		<< "\nn divided by		10	=	" << 10 / n
 		<< "\n remainder of		n	=	" << n%30
-		<< "\n square root  of	n	=	" << sqrt(n)
 		<< "\n";
 
 }
