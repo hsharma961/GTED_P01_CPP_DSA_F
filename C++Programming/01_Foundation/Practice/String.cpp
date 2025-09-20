@@ -4,9 +4,9 @@
 int main(){
     
     std::cout<<"enter your name:";
-    char n[20];
-    std::cin >>n;
-    std::cout<<"hello "<<n<<"\n";
+    std::string nam;
+    std::getline(std::cin, nam);
+    std::cout<<"hello "<<nam<<"\n";   
     system("pause");
     return 0;
 }

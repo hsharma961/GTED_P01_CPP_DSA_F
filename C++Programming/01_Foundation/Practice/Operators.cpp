@@ -10,5 +10,6 @@ int main()
 		<< "\nn divided by		10	=	" << 10 / n
 		<< "\n remainder of		n	=	" << n%30
 		<< "\n";
-
+		system("pause");
+	return 0;
 }
