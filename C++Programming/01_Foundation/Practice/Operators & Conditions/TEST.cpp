@@ -1,30 +1,47 @@
-//buy cups more then 12 or be a member more then 2 years 
-// you will get discount
-
 #include <iostream>
+using namespace std;
 
 int main(){
 
- int cups;
- bool member;
- 
-		std::cout <<"*********WELCOME BACK**************\n\n"
-			  <<"Be a memeber and Get the discount on purcheses\n"
-			  <<"\t\tT&C Applied\n\n\n"
-			  <<"How much cups you want?\n"
-			  <<"or please tell us if you are memberahip for 2 years (true/false)\n";
-		std::cin >> cups >> member;
-	
-			 	if(cups >= 12 || member){
-	
-				std::cout <<" CONGRATULATIONS \n"
-						  <<" You got a big discount of 30% \n";
-			}
-			else {	
-				std::cout <<" Sorry you are not elegible for discount\n"
-						  <<"Come Tomorrow (WITH MONEY)\n";
-			}
-	
+int cups;
+
+double cupPrice = 16,
+totalPrice = cups*cupPrice,
+dis_10Percent= totalPrice - (totalPrice*10/100),
+dis_20Percent= totalPrice - (totalPrice*20/100);
+
+cout<<"//less then 10 cups NO discount\n"
+	<<"//10-20 cups 10% discount\n"
+	<<"//more then 20 = 20% discount\n\n";
+
+cout<<"Enter number of cups you want\n";
+
+cin>> cups;
+
+if (cups < 10){
+	cout<<"You bought "<< cups <<" cups, with NO DISCOUNT\n";		
+	cout<<"Your bill is "<< totalPrice <<"\n";
+} else if (cups >= 10 && cups <= 20){
+		cout<< " You bought "<< cups <<" cups, with 10% DISCOUNT\n";
+		cout<< " Your bill is "<< dis_10Percent <<"\n";	
+} else if (cups > 20){
+		cout<< " You bought "<< cups <<" cups, with 20% DISCOUNT\n";
+		cout<< " Your bill is "<< dis_20Percent <<"\n";
+}else{
+	cout<<"NO DISCOUNT!\n";
+}
+		// if (cups >= 10 && cups <= 20){
+		// 		cout<< " You bought "<< cups <<" cups, with 10% DISCOUNT\n";
+		// 		cout<< " Your bill is "<< totalPrice - (totalPrice*10/100) <<"\n";
+		// } else if (cups > 20){
+		// 		cout<< " You bought "<< cups <<" cups, with 20% DISCOUNT\n";
+		// 		cout<< " Your bill is "<< totalPrice - (totalPrice*20/100) <<"\n";
+		// }else{
+		// 	cout<<"NO DISCOUNT!\n";
+		// }
+
 	system ("pause");
 	return 0;
 }
+
+//(cups*cupsprice)-(cups*cupsPrice*10/100)
