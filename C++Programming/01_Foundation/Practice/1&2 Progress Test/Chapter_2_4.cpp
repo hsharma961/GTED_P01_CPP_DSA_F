@@ -6,7 +6,7 @@ int main(){
 	int val1;
 	int val2;
 
-		cout <<"put 2 values for input to make sums\n";
+		cout <<"put 2 floating point values for input to make sums\n";
 		cin >> val1 >> val2;
 
 		cout << "smaller " << (val1<val2? val1:val2) << "\n"  
