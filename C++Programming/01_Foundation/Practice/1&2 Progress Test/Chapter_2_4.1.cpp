@@ -11,10 +11,10 @@ int main(){
 
 		cout << "smaller " << (val1<val2? val1:val2) << "\n"  
 			  << "larger " << (val1>val2? val1:val2) << "\n"
-			  << "condition val1==val2 " << (val1==val2? val1:val2) << "\n"
-			  << "condition val1==val2 " << (val1==val2? val2:val1) << "\n"
-			  << "condition val2==val1 " << (val2==val1? val1:val2) << "\n"
-			  << "condition val2==val1 " << (val2==val1? val2:val1) << "\n"
+			//   << "condition val1==val2 " << (val1==val2? val1:val2) << "\n"
+			//   << "condition val1==val2 " << (val1==val2? val2:val1) << "\n"
+			//   << "condition val2==val1 " << (val2==val1? val1:val2) << "\n"
+			//   << "condition val2==val1 " << (val2==val1? val2:val1) << "\n"
 			  << "difference " << val1-val2 << "\n"
 			  << "product " << val1*val2 << "\n"
 			  << "ratio " << val1/val2 << "\n";

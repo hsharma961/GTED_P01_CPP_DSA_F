@@ -49,7 +49,8 @@ int main(){
 					}
 				else if (age>17||age<=59){
 					std::cout << "\nI hope you are enjoying your work."
-							  << "See you at office tomorrow.\n";
+							  << "See you at o
+							  \ffice tomorrow.\n";
 					}
 					
 					/*  Instead of using multiple \t for alignment, 

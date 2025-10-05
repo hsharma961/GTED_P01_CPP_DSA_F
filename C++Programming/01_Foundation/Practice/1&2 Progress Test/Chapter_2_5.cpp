@@ -55,7 +55,7 @@ int main(){
     // just change double to string, rest of the code is same
     // int val1, val2, val3;
 	string val1, val2, val3;
-		cout << "Input 3 Values for in any order to get in NUMERICAL sequence\n";
+		cout << "Input 3 Values for in any order to get in NUMERICAL sequence\n\n";
 		cin >> val1 >> val2 >> val3;
 
 			if(val1 < val2 && val2 < val3){

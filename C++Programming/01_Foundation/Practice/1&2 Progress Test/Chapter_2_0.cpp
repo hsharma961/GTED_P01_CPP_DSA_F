@@ -10,7 +10,8 @@ int main(){
 		std::cin >> first_name;
 		
 		std::cout <<"\n\nHello " << first_name <<"\n\n";
- 
+
+	system("pause"); 
 	return 0;
 }
 

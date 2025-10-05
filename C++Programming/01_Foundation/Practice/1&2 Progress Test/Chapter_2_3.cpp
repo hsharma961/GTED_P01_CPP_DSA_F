@@ -9,8 +9,8 @@ int main(){
 		std::cout << "Enter the value to convert mile(s) into Kilometer(s).\n";
 		std::cin >> mile;
 
-		std::cout <<"\nMile(s):-"<< mile << "\n"
-				  <<"Kilometer(s):-" << mile * KiMi << "\n"
+		std::cout <<"\nMile(s): "<< mile << "\n"
+				  <<"Kilometer(s): " << mile * KiMi << "\n"
 				  <<"\n";
 
 	system("pause");
