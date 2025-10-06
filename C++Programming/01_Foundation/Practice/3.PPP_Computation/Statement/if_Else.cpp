@@ -23,20 +23,7 @@ int main() {
 
     cout << endl;
 
-        switch (unit) {
-            case 'y':
-                cout <<  dollar << " Yen is: " << yen * dollar << "$" << "\n";
-                break;
-            case 'k':
-                cout <<  dollar << " kroner is: " << kroner * dollar << "$" << "\n";
-                break;
-            default:
-                cout << "Sorry, I don't know a unit called '" << unit << "'\n";
-                break;
-    }
-    return 0;
-}
-/*if(unit =='y' || unit =='Y')
+    if(unit =='y' || unit =='Y')
         if (yen*dollar <= 1)
             cout <<  dollar << " Yen is: " << yen * dollar << "$" << "\n";
         else
@@ -61,4 +48,10 @@ int main() {
         cout <<  dollar << " Pounds are " << pound * dollar << "$" << "\n";
 
     else
-        cout << "I don't know a unit called '" << unit << "'\n";*/
+        cout << "I don't know a unit called '" << unit << "'\n";
+
+}
+
+/*Use the example above as a model for a program that converts yen ('y'),n
+kroner ('k'), and pounds ('p') into dollars. If you like realism, you can find
+conversion rates on the Web.*/

@@ -2,33 +2,20 @@
 using namespace std;
 
 int main() {
-    
-    // values in a dollar
-    double
-     yen = 0.0067, // 1 yen per dollar
-     kroner = 0.0628, // 1 kroner per doller
-     pound = 1.34, // 1 pound per dollar
-     rupee = 0.013, // 1 rupee per dollar 
-     dollar;
 
-    char unit = ' ';
+constexpr double cm_per_inch = 2.54; // number of centimeters in an inch
+double length = 1; // length in inches or centimeters
+char unit;
 
-    cout <<"....CURRENCY CONVERTER....\n\n"
-         << "Type 'r' for Rupees,\n"
-         << "Type 'y' for Yens,\n"
-         << "Type 'k' for Kroners, \n"
-         << "Type 'p' for Pounds \n\n";
-         
-    cin >> dollar >> unit;
-
-    cout << endl;
+        cout<< "Please enter a length followed by a unit (c or i):\n";
+        cin >> length >> unit;
 
         switch (unit) {
             case 'y':
                 cout <<  dollar << " Yen is: " << yen * dollar << "$" << "\n";
                 break;
             case 'k':
-                cout <<  dollar << " kroner is: " << kroner * dollar << "$" << "\n";
+                cout << length << "cm == " << length/cm_per_inch << "in\n";
                 break;
             default:
                 cout << "Sorry, I don't know a unit called '" << unit << "'\n";

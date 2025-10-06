@@ -14,29 +14,15 @@ int main() {
     char unit = ' ';
 
     cout <<"....CURRENCY CONVERTER....\n\n"
-         << "Type 'r' for Rupees,\n"
-         << "Type 'y' for Yens,\n"
-         << "Type 'k' for Kroners, \n"
-         << "Type 'p' for Pounds \n\n";
-         
+         << "Type 'y' for yens,\n"
+         << "Type 'r' for yens,\n"
+         << "Type 'k' for kroners, \n"
+         << "Type 'p' for pounds \n\n";
     cin >> dollar >> unit;
 
     cout << endl;
 
-        switch (unit) {
-            case 'y':
-                cout <<  dollar << " Yen is: " << yen * dollar << "$" << "\n";
-                break;
-            case 'k':
-                cout <<  dollar << " kroner is: " << kroner * dollar << "$" << "\n";
-                break;
-            default:
-                cout << "Sorry, I don't know a unit called '" << unit << "'\n";
-                break;
-    }
-    return 0;
-}
-/*if(unit =='y' || unit =='Y')
+    if(unit =='y' || unit =='Y')
         if (yen*dollar <= 1)
             cout <<  dollar << " Yen is: " << yen * dollar << "$" << "\n";
         else
@@ -61,4 +47,10 @@ int main() {
         cout <<  dollar << " Pounds are " << pound * dollar << "$" << "\n";
 
     else
-        cout << "I don't know a unit called '" << unit << "'\n";*/
+        cout << "I don't know a unit called '" << unit << "'\n";
+
+}
+
+/*Use the example above as a model for a program that converts yen ('y'),n
+kroner ('k'), and pounds ('p') into dollars. If you like realism, you can find
+conversion rates on the Web.*/
