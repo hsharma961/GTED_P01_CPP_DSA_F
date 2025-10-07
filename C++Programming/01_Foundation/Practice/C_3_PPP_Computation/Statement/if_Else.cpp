@@ -24,25 +24,25 @@ int main() {
     cout << endl;
 
     if(unit =='y' || unit =='Y')
-        if (yen*dollar <= 1)
+        if (dollar <= 1)
             cout <<  dollar << " Yen is: " << yen * dollar << "$" << "\n";
         else
             cout <<  dollar << " Yens are: " << yen * dollar << "$" << "\n";
 
     else if (unit =='r' || unit =='R')
-        if (rupee*dollar <= 1)
+        if (dollar <= 1)
             cout <<  dollar << " Rupee is: " << rupee * dollar << "$" << "\n";
         else
             cout <<  dollar << " Rupees are: " << rupee * dollar << "$" << "\n";
 
     else if (unit =='k' || unit =='K')
-        if (kroner*dollar <= 1)
+        if (dollar <= 1)
             cout <<  dollar << " kroner is: " << kroner * dollar << "$" << "\n";
         else
         cout <<  dollar << " Kroners are: " << kroner * dollar << "$" << "\n";
 
     else if (unit =='P'|| unit =='p')
-        if (pound*dollar <= 1)
+        if (dollar <= 1)
             cout <<  dollar << " Pound is: " << kroner * dollar << "$"  << "\n";
         else
         cout <<  dollar << " Pounds are " << pound * dollar << "$" << "\n";

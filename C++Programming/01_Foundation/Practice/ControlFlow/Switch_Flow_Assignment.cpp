@@ -8,7 +8,7 @@ int main()
 {
 	
         double price;
-        int userChoice;
+        char userChoice;
         
         std::cout << "\n\n"
                 << "Best Tea of The Era PRESENTING\n"
@@ -24,17 +24,17 @@ int main()
         
             switch (userChoice)
                 {
-                    case 1:
+                    case 'p':
                         price=22.52;
                         std::cout << "Your bill for Pure_Tea is " << price <<std::endl;
                         break;
                     
-                    case 2:
+                    case 'w':
                         price=16.23;
                         std::cout << "Your bill for White_Tea is " << price <<std::endl;
                         break;
                     
-                    case 3:
+                    case 'i':
                         price=14.51;
                         std::cout << "Your bill for Iced_tea is " << price <<std::endl;
                         break;
@@ -48,6 +48,5 @@ int main()
 
     system("pause");
     return 0;
-
 }
 
