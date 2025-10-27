@@ -3,22 +3,22 @@ input. Begin by typing the code prompting a user to enter
 his or her first name and writing “Hello, first_name” where first_name
 is the name entered by the user.*/
 
-
 #include <iostream>
 #include <string>
 
-int main(){
+int main()
+{
 
 	std::string first_name;
 
-		std::cout << "Enter your first name here: ";
-		
-		std::cin >> first_name;
-		
-		std::cout <<"\n\nDear " << first_name <<",\n\n";
+	std::cout << "Enter your first name here: ";
+
+	std::cin >> first_name;
+
+	std::cout << "\n\nDear " << first_name << ",\n\n";
 
 	system("pause");
- 
+
 	return 0;
 }
 
@@ -36,13 +36,11 @@ int main(){
 	std::string first_name;
 
 		std::cout << "Enter your first name here: ";
-		
+
 		std::cin >> first_name;
-		
+
 		std::cout <<"\n\nHello " << first_name\n\n;
- 
+
 	return 0;
 }
 */
-
-

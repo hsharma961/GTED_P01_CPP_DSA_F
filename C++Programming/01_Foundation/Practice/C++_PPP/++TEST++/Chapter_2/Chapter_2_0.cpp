@@ -1,17 +1,18 @@
 #include <iostream>
 #include <string>
 
-int main(){
+int main()
+{
 
 	std::string first_name;
 
-		std::cout << "Enter your first name here: ";
-		
-		std::cin >> first_name;
-		
-		std::cout <<"\n\nHello " << first_name <<"\n\n";
+	std::cout << "Enter your first name here: ";
 
-	system("pause"); 
+	std::cin >> first_name;
+
+	std::cout << "\n\nHello " << first_name << "\n\n";
+
+	system("pause");
 	return 0;
 }
 

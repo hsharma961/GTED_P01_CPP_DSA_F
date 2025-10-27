@@ -1,20 +1,21 @@
 #include <iostream>
 #include <string>
 
-int main(){
+int main()
+{
 
 	int mile;
-	double KiMi=1.60934;
+	double KiMi = 1.60934;
 
-		std::cout << "Enter the value to convert mile(s) into Kilometer(s).\n";
-		std::cin >> mile;
+	std::cout << "Enter the value to convert mile(s) into Kilometer(s).\n";
+	std::cin >> mile;
 
-		std::cout <<"\nMile(s): "<< mile << "\n"
-				  <<"Kilometer(s): " << mile * KiMi << "\n"
-				  <<"\n";
+	std::cout << "\nMile(s): " << mile << "\n"
+			  << "Kilometer(s): " << mile * KiMi << "\n"
+			  << "\n";
 
 	system("pause");
- 
+
 	return 0;
 }
 
