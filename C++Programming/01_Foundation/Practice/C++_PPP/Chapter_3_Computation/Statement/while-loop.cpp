@@ -11,11 +11,9 @@ int main()
     int i = 1;
     char a = 'a';
    
-    while (a <='z') {
-        cout << a++ << "\t" << i << endl;
-        ++i;
-        
-        }
+    while (a <='z' && i<=26) 
+            {cout << a++ << "\t" << i++ << endl;}
+
     system("pause");
     return 0;
 }
