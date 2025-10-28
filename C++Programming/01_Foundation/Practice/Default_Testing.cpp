@@ -1,3 +1,5 @@
+// input words using vector and BLOOP bad words from input.
+
 #include <iostream>
 #include <vector>
 using namespace std;
