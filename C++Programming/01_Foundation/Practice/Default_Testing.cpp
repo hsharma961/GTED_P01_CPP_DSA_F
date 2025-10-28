@@ -1,4 +1,4 @@
-// input words using vector and BLOOP bad words from input.
+// input words using vector and BLOOP words you don't want to read from input.
 
 #include <iostream>
 #include <vector>
