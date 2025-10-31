@@ -17,8 +17,8 @@ int main(){
 
         if(num1==num2){
             std::cout << " the numbers are equal \n";
-        // }else if(num1){
-        //     std::cout << "the numbers are almost equal \n";
+        }else if(std::abs (num1 - num2) <= 1){
+            std::cout << "The numbers are almost equal (" << num1 << " and " << num2 << ")\n";
         }else if(num1<num2){
             std::cout <<"smaller vlaue is: " << num1 <<'\n'; 
             std::cout <<" larger value is:  "<< num2 <<'\n';
@@ -26,6 +26,7 @@ int main(){
             std::cout <<"smaller vlaue is: " << num2 <<'\n';
             std::cout <<" larger value is:  "<< num1 <<'\n';
         }
+        std::cout << "\n   difference: " << num1-num2 << '\n';
     }
         
     system("pause");
