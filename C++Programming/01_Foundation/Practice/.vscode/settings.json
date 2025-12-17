@@ -1,0 +1,31 @@
+{
+
+    // Auto-formatting is disabled on save.
+    // This forces the learner to manually indent and structure their code,
+    // which strengthens their understanding of proper code layout.
+    "editor.formatOnSave": false,
+
+    // Enable colorization of matching bracket pairs to help visually identify code blocks.
+    "editor.bracketPairColorization.enabled": true,
+
+    // Display vertical indentation guides to assist with correct code alignment.
+    "editor.guides.indentation": true,
+
+    // Keep IntelliSense for learning to discover API functions and signatures.
+    // This is generally considered a helpful learning tool rather than a crutch.
+    "C_Cpp.default.cppStandard": "c++23",
+    "C_Cpp.enhancedColorization": "enabled",
+    
+    // Set a consistent, readable font for programming.
+    "editor.fontFamily": "Consolas, 'Courier New', monospace",
+    "editor.fontLigatures": false,
+
+    // Exclude common build artifacts to keep the file explorer clean.
+    "files.exclude": {
+        "**/*.exe": true,
+        "**/*.o": true
+    },
+    
+    // Enable word wrap to avoid horizontal scrolling on long lines.
+    "editor.wordWrap": "on"
+}
