@@ -1,5 +1,5 @@
 /*Write a program that prompts the user to enter three integer values, and
-then outputs the values in NUMERICAL sequence separated by commas.
+then outputs the values in NUMERICAL sequence separated by commas.*/
 #include <iostream>
 using namespace std;
 

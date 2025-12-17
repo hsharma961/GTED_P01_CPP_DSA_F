@@ -1,15 +1,15 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-
+using namespace std;
 int main(){
   
-  std::vector<double>temps;
+   vector<double>temps;
   double sum=0;
 
-  std::cout<<"\ntemperature input\n";
+   cout<<"\ntemperature input\n";
 
-    for(double temp; std::cin>>temp;)
+    for(double temp;  cin>>temp;)
       temps.push_back(temp);
 
     // for(double t=0; t<temps.size(); ++t)
@@ -18,9 +18,9 @@ int main(){
       for(double t:temps)
       sum+=t;
 
-    std::ranges::sort(temps); // shorting algorithm "std::ranges::sort()"
+     ranges::sort(temps); // shorting algorithm " ranges::sort()"
 
-  std::cout <<"\nTemprature Sum = "<<sum
+   cout <<"\nTemprature Sum = "<<sum
             <<"\n           Size = "<<temps.size()
             <<"\n           Average = "<<sum/temps.size()
             <<"\n           Median = "<<temps[temps.size()/2]<<'\n';
