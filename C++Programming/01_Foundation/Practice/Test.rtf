@@ -1,23 +1,38 @@
 #include <iostream>
 #include <vector>
+#include <algorithm>
 #include <string>
+using namespace std;
 
 int main(){
 
-    vector<string>words;
-    vector<string>disliked = {'fat','ugly', 'bad'};
-    bool bad;
+  vector<string>input_words;
+  vector<string>bleep_words = {'fat','ugly', 'bad'};
+  bool is_bleep_word;
 
-    for(string temp; cin>>temp;)
-      words.push_back(temp)
-      bool bad=0;
-      
-    if(temp = disliked){
-      bool bad = 1;
-      cout<<"BLEEP" <<'\n';
+    cout<<"Enter words, but using words (fat ugly bad) is BLEEPED "<<'\n';
+
+
+    for(string temp; cin>>temp;){
+      input_words.push_back(temp)
     }
-      cout<<"words" <<'\n';
 
+      for(string words:input_words){
+        is_bleep_word=false;
+      }
+
+        for(string bad_words:bleep_words ){
+          if(words == bad_words){
+           is_bleep_word = true;
+              break;
+            }
+          }
+
+      if (is_bleep_word){
+        cout<<"BLEEP" <<'\n';
+      }else{
+            cout<<"words" <<'\n';
+      } 
 
   system("pause")
   return 0;

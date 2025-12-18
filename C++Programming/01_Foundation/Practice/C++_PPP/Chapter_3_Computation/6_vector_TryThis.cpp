@@ -1,42 +1,41 @@
 #include <iostream>
 #include <vector>
-#include <algorithm>
 #include <string>
 using namespace std;
 
 int main(){
 
-    vector<string>liked;//"input_words" would be cleaner
-    vector<string>disliked = {"fat","ugly", "bad"};
-    bool is_disliked;
+  vector<string>input_words;
+  vector<string>bleep_words = {"fat","ugly", "bad"};
+  bool is_bleep_word;
 
     cout<<"Enter words, but using words (fat ugly bad) is BLEEPED "<<'\n';
 
-   for(string temp; cin>>temp;){
-      liked.push_back(temp);
-        }
 
-       for(string words:liked){
-        is_disliked =0;//false would have been better
-
-         for (string bad_words:disliked){// convert vector to act as single word string
-              if(bad_words == words){
-               is_disliked = 1;
-               break;
-              }
-          }
-
-      if(is_disliked){
-      cout<<"  BLEEP  ";
-    }else{
-        cout<< words;
-      }
+    for(string temp; cin>>temp;){
+      input_words.push_back(temp);
     }
 
-    cout<<'\n';
+      for(const string& word:input_words){
+        is_bleep_word=false;
 
-  system("pause");
+        for(const string& banned:bleep_words ){
+          if(word == banned){
+           is_bleep_word = true;
+              break;
+            }
+          }
+
+        cout << (is_bleep_word ? "***** " : word + " "); /* compressed version of 
+                                                          if (is_bleep_word) 
+                                                          //cout<<"  *****  "; 
+                                                          //else 
+                                                          //cout<< word << " ";
+                                                          */
+          
+      } 
+      
+  cout<< '\n';
+  
   return 0;
 }
-
-
