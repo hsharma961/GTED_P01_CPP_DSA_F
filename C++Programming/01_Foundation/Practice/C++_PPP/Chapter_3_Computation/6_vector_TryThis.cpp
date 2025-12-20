@@ -26,13 +26,13 @@ int main(){
             }
           }
 
-        cout << (is_bleep_word ? "***** " : word + " "); /* compressed version of 
-                                                          if (is_bleep_word) 
+        cout << (is_bleep_word ? "***** " : word + " "); /* compressed version of if/else statement.
+                                                          if (is_bleep_word) ? (true)condition 1:(false)condition 2 
                                                           //cout<<"  *****  "; 
                                                           //else 
                                                           //cout<< word << " ";
                                                           */
-          
+          -
       } 
       
   cout<< '\n';
