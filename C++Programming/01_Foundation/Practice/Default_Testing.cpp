@@ -13,53 +13,6 @@ using namespace std;
 int main(){
 
 
-
-  double current_value = 0;
-    string unit = "";
-    double smallest = 0;
-    double largest = 0;
-    bool first = true; 
-
-    constexpr double cm_to_m = 0.01;
-    constexpr double in_to_m = 2.54 * cm_to_m;
-    constexpr double ft_to_m = 12 * in_to_m;
-
-    cout<< "enter the units to see smallest and largest length\n";
-
-
-    while (cin >> current_value >> unit) {
-        double converted_value = 0;
-          
-          if(unit=="m"){
-            converted_value=current_value;
-          }else if(unit=="cm"){
-            converted_value=current_value*cm_to_m;
-          }else if(unit=="in"){
-            converted_value=current_value*in_to_m;
-          }else if(unit=="ft"){
-            converted_value=current_value*ft_to_m;
-          }else{
-            cout<<"invalid\n"<<unit<<"\n";
-            continue;
-          }
-          
-          if (first) {
-            smallest = converted_value;
-            largest = converted_value;
-            first = false;
-            cout << current_value << unit << " is the first value ever\n";
-          } else {
-            if(current_value>smallest){
-              smallest=converted_value;
-              cout<<current_value<<unit<<" smallest_so_far\n";
-            }
-            if(current_value>largest){
-                largest=converted_value;
-                cout<<current_value<<unit<<" largest_so_far\n";
-            }
-          }
-        }
-
   return 0;
 }
 
