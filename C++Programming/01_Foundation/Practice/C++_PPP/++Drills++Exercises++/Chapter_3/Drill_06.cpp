@@ -21,12 +21,12 @@ int main(){
         while(cin>>num){
 
         if (num<smallest){
-            // smallest=num;
-            cout<<" is smallest so far ";
+            smallest=num;
+            cout<<" is smallest so far \n";
 
         }if (num>largest){
-            // largest=num;
-            cout<<" is largest so far ";
+            largest=num;
+            cout<<" is largest so far \n";
         }
     }
 

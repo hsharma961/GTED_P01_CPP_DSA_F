@@ -1,39 +1,35 @@
+/*[7] Add a unit to each double entered; that is, enter values such as 10cm,
+2.5in, 5ft, or 3.33m. Accept the four units: cm, m, in, ft. Assume
+conversion factors 1m==100cm, 1in==2.54cm, 1ft==12in. Read the unit
+indicator into a string. You may consider 12 m (with a space between
+the number and the unit) equivalent to 12m (without a space).*/
+
 #include <iostream>
-#include <vector>
-#include <algorithm>
 #include <string>
 using namespace std;
 
 int main(){
 
-  vector<string>input_words;
-  vector<string>bleep_words = {'fat','ugly', 'bad'};
-  bool is_bleep_word;
+    const double
+    m = 1, 
+    ft = m/3.28084,
+    in = m/39.37008,
+    cm = m/100;
+    
+    string
+    unit;
 
-    cout<<"Enter words, but using words (fat ugly bad) is BLEEPED "<<'\n';
+    double
+    num,
+    smallest,
+    largest;
 
 
-    for(string temp; cin>>temp;){
-      input_words.push_back(temp)
-    }
+    cout<< "enter the units to see smallest and largest length\n";
 
-      for(string words:input_words){
-        is_bleep_word=false;
-      }
+    
 
-        for(string bad_words:bleep_words ){
-          if(words == bad_words){
-           is_bleep_word = true;
-              break;
-            }
-          }
 
-      if (is_bleep_word){
-        cout<<"BLEEP" <<'\n';
-      }else{
-            cout<<"words" <<'\n';
-      } 
 
-  system("pause")
   return 0;
 }

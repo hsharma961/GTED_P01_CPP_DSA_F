@@ -14,7 +14,7 @@ int main(){
 
 
 
-  double current_value = 0;
+  double original_value = 0;
     string unit = "";
     double smallest = 0;
     double largest = 0;
@@ -27,17 +27,17 @@ int main(){
     cout<< "enter the units to see smallest and largest length\n";
 
 
-    while (cin >> current_value >> unit) {
+    while (cin >> original_value >> unit) {
         double converted_value = 0;
           
           if(unit=="m"){
-            converted_value=current_value;
+            converted_value=original_value;
           }else if(unit=="cm"){
-            converted_value=current_value*cm_to_m;
+            converted_value=original_value*cm_to_m;
           }else if(unit=="in"){
-            converted_value=current_value*in_to_m;
+            converted_value=original_value*in_to_m;
           }else if(unit=="ft"){
-            converted_value=current_value*ft_to_m;
+            converted_value=original_value*ft_to_m;
           }else{
             cout<<"invalid\n"<<unit<<"\n";
             continue;
@@ -47,15 +47,15 @@ int main(){
             smallest = converted_value;
             largest = converted_value;
             first = false;
-            cout << current_value << unit << " is the first value ever\n";
+            cout << original_value  << unit << " is the first value ever\n";
           } else {
-            if(current_value>smallest){
+            if(converted_value<smallest){
               smallest=converted_value;
-              cout<<current_value<<unit<<" smallest_so_far\n";
+              cout<<original_value<<unit<<" smallest_so_far\n";
             }
-            if(current_value>largest){
+            if(converted_value>largest){
                 largest=converted_value;
-                cout<<current_value<<unit<<" largest_so_far\n";
+                cout<<original_value<<unit<<" largest_so_far\n";
             }
           }
         }
